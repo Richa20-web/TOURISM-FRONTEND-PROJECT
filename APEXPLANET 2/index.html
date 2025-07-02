@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore with Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <!---navbar---->
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">MapMyTrip</a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined"
+            >close</span
+          >
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destination">Destinations</a></li>
+          <li><a href="#whyus">Why Us?</a></li>
+          <li><a href="#todolist">To-Do-List</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <span id="menu-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <!-----hero section---->
+    <section id="home" class="hero-section">
+      <div class="content">
+        <h1>“Explore <span>INDIA</span> with Us"</h1>
+        <p>
+          Your Travel Companion to Dream Destinations.Discover breathtaking
+          destinations, hidden gems, and cultural wonders from across the globe.
+          Whether you're planning a peaceful getaway, an adventurous trek, or a
+          city tour, MapMyTrip is your perfect travel companion. Let us guide
+          you through stunning landscapes, must-see attractions, and custom
+          travel experiences — all in one place!
+        </p>
+        <button>Plan trip</button>
+        <button>Start exploring</button>
+      </div>
+    </section>
+
+    <!-- Destination Section -->
+    <section id="destination" class="destination-section">
+      <h2 class="section-title">Explore Popular Destinations</h2>
+      <div class="destination-grid">
+        <!-- Destination 1: Shimla -->
+        <div class="destination-card">
+          <img src="IMG/shimla.jpg" alt="Shimla" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Shimla</h3>
+            <p class="card-desc">
+              Queen of the Hills. Enjoy snow, scenic views, and British colonial
+              charm.
+            </p>
+            <button
+              class="explore-btn"
+              onclick="window.open('https://www.google.com/maps/place/Shimla,+Himachal+Pradesh/@31.0782864,77.1178214,13z/data=!3m1!4b1!4m6!3m5!1s0x390578e3e35d6e67:0x1f7e7ff6ff9f54b7!8m2!3d31.104963!4d77.1639874!16zL20vMDJwM215?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D')"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <!-- Destination 2: Rajasthan -->
+        <div class="destination-card">
+          <img src="IMG/rajasthan.jpg" alt="Rajasthan" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Rajasthan</h3>
+            <p class="card-desc">
+              Land of Kings. Forts, deserts, royal palaces, and colorful
+              festivals await.
+            </p>
+            <button
+              class="explore-btn"
+              onclick="window.open('https://www.google.com/maps/place/Rajasthan/@26.5402162,68.5830359,6z/data=!4m6!3m5!1s0x396a3efaf7e30e37:0xb52b9b4506c088e5!8m2!3d27.0238036!4d74.2179326!16zL20vMDZrNV8?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D')"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <!-- Destination 3: Goa -->
+        <div class="destination-card">
+          <img src="IMG/goa.jpg" alt="Goa" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Goa</h3>
+            <p class="card-desc">
+              Chill by the beaches, party all night, and enjoy a tropical vibe.
+            </p>
+            <button
+              class="explore-btn"
+              onclick="window.open('https://www.google.com/maps/place/Goa/@15.3500845,73.347191,9z/data=!3m1!4b1!4m6!3m5!1s0x3bbfba106336b741:0xeaf887ff62f34092!8m2!3d15.2993265!4d74.123996!16zL20vMDFjMW5t?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D')"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <!-- Destination 4: Bihar -->
+        <div class="destination-card">
+          <img src="IMG/bihar.jpg" alt="Bihar" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Bihar</h3>
+            <p class="card-desc">
+              Dive into rich heritage, Buddhist sites, ancient universities &
+              culture.
+            </p>
+            <button
+              class="explore-btn"
+              onclick="window.open('https://www.google.com/maps/place/Bihar/@25.9004209,84.4874188,8z/data=!3m1!4b1!4m6!3m5!1s0x39ed5844f0bb6903:0x57ad3fed1bbae325!8m2!3d25.9644427!4d85.2722472!16zL20vMDI5MHJi?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D')"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <!----Destination 5: Kerela--->
+        <div class="destination-card">
+          <img src="IMG/kerela.jpg" alt="Kerela" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Kerela</h3>
+            <p class="card-desc">
+              Cruise through backwaters, relax with Ayurveda, and explore lush
+              greenery.
+            </p>
+            <button
+              class="explore-btn"
+              onclick="window.open('https://www.google.com/maps/place/Kerala/@10.5387248,73.4957182,7z/data=!3m1!4b1!4m6!3m5!1s0x3b0812ffd49cf55b:0x64bd90fbed387c99!8m2!3d10.1631526!4d76.6412712!16zL20vMGJ5aDhq?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D')"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <!----Destination 6: Assam--->
+        <div class="destination-card">
+          <img src="IMG/assam.jpg" alt="Assam" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Assam</h3>
+            <p class="card-desc">
+              Explore tea gardens, wildlife, river islands, and vibrant tribal
+              culture
+            </p>
+            <button
+              class="explore-btn"
+              onclick="window.open('https://www.google.com/maps/place/Assam/@26.0347167,90.2164093,7z/data=!3m1!4b1!4m6!3m5!1s0x374516c94c312d63:0xd11a73bb736719fb!8m2!3d26.2006043!4d92.9375739!16zL20vMDE5Zm03?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D')"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <!----Destination 7: Uttrakhand--->
+        <div class="destination-card">
+          <img src="IMG/uttarakhand.jpg" alt="Uttarakhand" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Uttarakhand</h3>
+            <p class="card-desc">
+              Land of the Gods — trek through the Himalayas, visit sacred
+              temples, and enjoy natural bliss.
+            </p>
+            <button
+              class="explore-btn"
+              onclick="window.open('https://www.google.com/maps/place/Uttarakhand/@30.0867105,77.9892231,8z/data=!3m1!4b1!4m6!3m5!1s0x3909dcc202279c09:0x7c43b63689cc005!8m2!3d30.066753!4d79.0192997!16zL20vMDUwdHQ4?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D')"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <!----Destination 8: Uttar Pradesh---->
+        <div class="destination-card">
+          <img
+            src="IMG/uttarpradesh.jpg"
+            alt="Uttar Pradesh"
+            class="card-img"
+          />
+          <div class="card-content">
+            <h3 class="card-title">Uttar Pradesh</h3>
+            <p class="card-desc">
+              Discover historical cities, sacred rivers, and a vibrant cultural
+              tapestry.
+            </p>
+            <button
+              class="explore-btn"
+              onclick="window.open('https://www.google.com/maps/place/Uttar+Pradesh/@26.7848621,70.7358238,6z/data=!3m1!4b1!4m6!3m5!1s0x39994e9f7b4a09d3:0xf6a5476d3617249d!8m2!3d27.5705886!4d80.0981869!16zL20vMDFocG5o?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D')"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---why us section --->
+    <section id="whyus" class="whyus-section">
+      <h2 class="section-title">Why Us?</h2>
+      <div class="section-content">
+        <div class="whyus-image-wrapper">
+          <img src="IMG/whhyus.jpg" alt="" class="whyus-image" />
+        </div>
+        <div class="whyus-details">
+          <p class="text">
+            🧭 Making travel planning easy, exciting and unforgettable!
+          </p>
+          <div class="grid-container">
+            <div class="grid-item">🧭 Expert Travel Guides</div>
+            <div class="grid-item">🗺️ Expert Destination Guides</div>
+            <div class="grid-item">💸 Affordable Packages</div>
+            <div class="grid-item">📞 24/7 Customer Support</div>
+            <div class="grid-item">⭐ Verified Reviews</div>
+            <div class="grid-item">🔐 Secure Bookings</div>
+          </div>
+        </div>
+      </div>
+      <div class="whyus-reach">
+        <div class="reach-box">
+          <h2 class="reach-title">100+</h2>
+          <p class="text">Destinations Covered</p>
+        </div>
+        <div class="reach-box">
+          <h2 class="reach-title">10,000+</h2>
+          <p class="text">Happy Travellers</p>
+        </div>
+        <div class="reach-box">
+          <h2 class="reach-title">500+</h2>
+          <p class="text">Custom Trips Planned</p>
+        </div>
+        <div class="reach-box">
+          <h2 class="reach-title">24/7</h2>
+          <p class="text">Travel Support</p>
+        </div>
+      </div>
+    </section>
+    <!----todo section--->
+    <section id="todolist" class="todo-section">
+      <h2 class="section-title">To-Do-List</h2>
+      <div class="todo-card">
+        <h2>Your Travel To-Do List</h2>
+        <div class="todo-container">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Enter a place you want to visit"
+          />
+          <button onclick="addTodo()">Add</button>
+          <ul id="todo-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!---contact section --->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" />
+        <input type="text" id="email" placeholder="Your Email" />
+        <input type="tel" id="phone" placeholder="Your Phone Number" />
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

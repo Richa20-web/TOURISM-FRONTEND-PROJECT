@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body {
+  height: 100vh;
+  background: url(IMG/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1500px;
+}
+.nav-logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-left: 0;
+  color: black;
+  text-decoration: none;
+}
+.navbar .menu-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  font-size: 1.3rem;
+  background: transparent;
+  position: static;
+}
+a {
+  all: unset;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.navbar .menu-links a {
+  appearance: none;
+  overflow: visible;
+  resize: none;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  color: black;
+}
+.navbar .menu-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: rgb(54, 54, 117);
+  transition: width 0.3s ease;
+}
+.navbar .menu-links a:hover::after {
+  width: 80%;
+}
+#close-menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/*----hero section-----*/
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.hero-section .content {
+  max-width: 1000px;
+  margin: 0 11px;
+}
+.hero-section .content h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+.hero-section .content h1 span {
+  color: orange;
+  font-style: italic;
+}
+.hero-section .content p {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 35px;
+}
+.hero-section .content button {
+  background: white;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 200;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 5px 9px;
+  margin-top: 20px;
+  color: black;
+}
+.hero-section .content button:hover {
+  color: black;
+  background: rgb(94, 125, 226);
+}
+
+/*----destination section----*/
+.destination-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.destination-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.explore-btn {
+  background: rgb(54, 54, 117);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.explore-btn:hover {
+  background: rgb(75, 75, 148);
+}
+
+/*--why us section---*/
+.whyus-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+.whyus-section .section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+.whyus-section .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.whyus-section .whyus-image-wrapper .whyus-image {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin: 50px;
+}
+.whyus-section .whyus-details .text {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0 20px;
+  color: rgb(63, 63, 73);
+  font-weight: bold;
+}
+.whyus-section .whyus-details .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minimax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.whyus-section .whyus-details .grid-container .grid-item {
+  background-color: #739aa1;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+.whyus-section .whyus-details .grid-container .grid-item:hover {
+  background-color: rgb(207, 181, 101);
+  transform: translateY(-5px);
+}
+.whyus-reach {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.whyus-reach .reach-box h2 {
+  color: rgb(231, 210, 58);
+  font-size: 40px;
+  font-weight: bold;
+}
+.whyus-reach .reach-box p {
+  font-size: 30px;
+  color: rgb(213, 207, 114);
+}
+
+/*---todo section---*/
+.todo-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+.todo-section .section-title {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.todo-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.todo-card h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#todo-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#todo-list li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove-btn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*---contact section---*/
+.contact-section {
+  padding: 60px 20px;
+  max-width: 600px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: rgb(54, 54, 117);
+}
+
+#contact-form button {
+  padding: 12px 20px;
+  background: rgb(54, 54, 117);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact-form button:hover {
+  background: rgb(40, 40, 100);
+}
+
+.input-error {
+  border: 2px solid red !important;
+}
+#contact-form input[type="tel"] {
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  transition: 0.3s;
+}
+
+#contact-form input[type="tel"]:focus {
+  border-color: rgb(54, 54, 117);
+  background-color: white;
+}
